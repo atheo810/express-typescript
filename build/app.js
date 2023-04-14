@@ -27,6 +27,12 @@ const getLocationsWithTimezones = (request, response, next) => {
             timezoneAbbr: "JST",
             utcOffset: 9,
         },
+        {
+            location: "Indonesia",
+            timezoneName: "Indonesia Standard Time",
+            timezoneAbbr: "IST",
+            utcOffset: 6,
+        },
     ];
     response.status(200).json(locations);
 };
